@@ -1,0 +1,22 @@
+{
+    "name": "lsof",
+    "description": "List open file descriptors for your node process",
+    "version": "0.0.1",
+    "author": "Dav Glass <davglass@gmail.com>",
+    "bugs": { "web" : "http://github.com/davglass/node-lsof/issues" },
+    "contributors": [
+        { "name": "Dav Glass", "email": "davglass@gmail.com" },
+    ],
+    "main": "./lib/lsof",
+    "engines": { "node": ">= 0.2.0" },
+    "licenses":[
+        {
+            "type" : "BSD",
+            "url" : "https://github.com/davglass/node-lsof/blob/master/LICENSE"
+        }
+    ],
+    "repository": {
+        "type":"git",
+        "url":"http://github.com/davglass/node-lsof.git"
+    }
+}
