@@ -6,7 +6,7 @@ call it from your `status` commands to see how many open file descriptors your p
 
 ## Install
 
-    `npm install lsof`
+    npm install lsof
 
 ## Usage
 
