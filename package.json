@@ -5,7 +5,7 @@
     "author": "Dav Glass <davglass@gmail.com>",
     "bugs": { "web" : "http://github.com/davglass/node-lsof/issues" },
     "contributors": [
-        { "name": "Dav Glass", "email": "davglass@gmail.com" },
+        { "name": "Dav Glass", "email": "davglass@gmail.com" }
     ],
     "main": "./lib/lsof",
     "engines": { "node": ">= 0.2.0" },
