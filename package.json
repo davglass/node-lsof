@@ -3,7 +3,7 @@
     "description": "List open file descriptors for your node process",
     "version": "0.0.2",
     "author": "Dav Glass <davglass@gmail.com>",
-    "bugs": { "web" : "http://github.com/davglass/node-lsof/issues" },
+    "bugs": { "url" : "http://github.com/davglass/node-lsof/issues" },
     "contributors": [
         { "name": "Dav Glass", "email": "davglass@gmail.com" }
     ],
