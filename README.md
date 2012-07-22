@@ -72,6 +72,43 @@ call it from your `status` commands to see how many open file descriptors your p
         * ]
         */
     });
+    
+    // Or, inspect a port in use
+    lsof.rawTcpPort(11211, function(data) {
+        console.log(data);
+        /*
+         * [  { listening: true,
+         *     command: 'memcached',
+         *      pid: '186',
+         *      user: 'matt',
+         *      fd: '28u',
+         *      type: 'IPv6',
+         *      device: '0xffffff80121fe600',
+         *      'size/off': '0t0',
+         *      node: 'TCP',
+         *      name: 'localhost:11211' },
+         *    { listening: true,
+         *      command: 'memcached',
+         *      pid: '186',
+         *      user: 'matt',
+         *      fd: '29u',
+         *      type: 'IPv4',
+         *      device: '0xffffff80122004e0',
+         *      'size/off': '0t0',
+         *      node: 'TCP',
+         *      name: 'localhost:11211' },
+         *   { listening: true,
+         *      command: 'memcached',
+         *      pid: '186',
+         *      user: 'matt',
+         *      fd: '30u',
+         *      type: 'IPv6',
+         *      device: '0xffffff80121fe240',
+         *      'size/off': '0t0',
+         *      node: 'TCP',
+         *      name: 'localhost:11211' } ]
+         */
+    }
 
 
     
