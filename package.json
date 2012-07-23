@@ -5,12 +5,12 @@
     "author": "Dav Glass <davglass@gmail.com>",
     "bugs": { "url" : "http://github.com/davglass/node-lsof/issues" },
     "contributors": [
-        { "name": "Dav Glass", "email": "davglass@gmail.com" }
+        { "name": "Matt Sanford", "email": "matt@mzsanford.com" }
     ],
     "main": "./lib/lsof",
     "engines": { "node": ">= 0.2.0" },
     "scripts": {
-        "test": "vows --spec test/*"
+        "test": "./node_modules/.bin/vows --spec test/*"
     },
     "licenses":[
         {
