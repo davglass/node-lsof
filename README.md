@@ -8,6 +8,10 @@ call it from your `status` commands to see how many open file descriptors your p
 
     npm install lsof
 
+## Build Status
+
+[![Build Status](https://secure.travis-ci.org/davglass/node-lsof.png?branch=master)](http://travis-ci.org/davglass/node-lsof)
+
 ## Usage
 
     var lsof = require('../lib/lsof');
