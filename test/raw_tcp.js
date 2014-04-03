@@ -12,16 +12,15 @@ var server = net.createServer(function (socket) {
 server.listen(testPort, '127.0.0.1');
 
 // Create a Test Suite
-vows.describe('lsof').addBatch({
+vows.describe('lsof - raw tcp').addBatch({
 	'raw tcp': {
 		topic: function() {
-      lsof.rawTcpPort(testPort, this.callback);
+            lsof.rawTcpPort(testPort, this.callback);
 		},
-
-	  'contains key: command': function(topic) {
-		  assert.isString(topic[0]['command']);
-		  assert.equal('node', topic[0]['command']);
-	  },
+	    'contains key: command': function(topic) {
+		    assert.isString(topic[0]['command']);
+		    assert.equal('node', topic[0]['command']);
+	    },
 		'contains key: pid': function(topic) {
 			assert.match(topic[0]['pid'], /^[0-9]+$/);
 			assert.equal(process.pid, topic[0]['pid']);
