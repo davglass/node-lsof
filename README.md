@@ -1,5 +1,7 @@
 # lsof For Node
 
+**This module is now deprecated and no longer maintained**
+
 A simple `lsof` processor for node. This is handy when debugging long apps. You can load this and
 call it from your `status` commands to see how many open file descriptors your process has.
 
